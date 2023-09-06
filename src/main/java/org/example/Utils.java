@@ -118,20 +118,4 @@ public class Utils {
 
         return Integer.parseInt(date.substring((firstHyphen + 1), (firstHyphen + 3)));
     }
-
-    public static void forTests() {
-        List<Integer> t = new ArrayList<>();
-        t.add(0);
-        t.add(1);
-        t.add(2);
-        t.add(3);
-        t.add(4);
-        t.add(5);
-        t.add(6);
-        List<Integer> tt = t.subList(4, 7);
-
-        String date = "2013-12-01";
-        int index = date.indexOf("-");
-        String dateWithoutDay = date.substring((index + 1), (index + 3));
-    }
 }

@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CSVReader {
-    public static List<StockPrice> readStocksPriceFromCSV(String fileName) {
+    public static List<StockPrice> getStocksPriceFromCSV(String fileName) {
         List<StockPrice> stockPrices = new ArrayList<>();
         Path pathToFile = Paths.get(fileName);
 

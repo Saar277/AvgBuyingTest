@@ -1,7 +1,6 @@
 package org.example.mappers;
 
 import org.example.StockPrice;
-import org.example.finals.SetupFinals;
 
 import java.util.ArrayList;
 import java.util.HashMap;
