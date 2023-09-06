@@ -106,6 +106,19 @@ public class Utils {
         return ((bigger - smaller) / smaller) * 100;
     }
 
+    public static int getYearFromStockPrice(StockPrice stockPrice) {
+        String date = stockPrice.getDate();
+
+        return Integer.parseInt(date.substring(0, 4));
+    }
+
+    public static int getMonthFromStockPrice(StockPrice stockPrice) {
+        String date = stockPrice.getDate();
+        int firstHyphen = date.indexOf("-");
+
+        return Integer.parseInt(date.substring((firstHyphen + 1), (firstHyphen + 3)));
+    }
+
     public static void forTests() {
         List<Integer> t = new ArrayList<>();
         t.add(0);
